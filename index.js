@@ -11,7 +11,7 @@ function submitData (name , email){
             email
         }),
     })
-    .then( (response)=>response.json())
+    .then( (res)=>res.json())
     .then(function (funny) {
         return document.body.innerHTML = funny["id"]
         })
